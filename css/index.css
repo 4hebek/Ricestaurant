@@ -1,1 +1,8 @@
 // index CSS //
+
+img.logo {
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px 10px 10px;
+
+}
