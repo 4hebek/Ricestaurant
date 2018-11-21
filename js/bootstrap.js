@@ -2373,5 +2373,4 @@ if (typeof jQuery === 'undefined') {
       Plugin.call($spy, data)
     })
   })
-
 }(jQuery);
