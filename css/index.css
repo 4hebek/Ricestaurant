@@ -12,7 +12,7 @@ h1.title {
   padding-left:10px;
   padding-right:10px;
   padding-bottom: 0px;
-  font-size: 100px;
+  font-size: 80px;
   font-family: 'Finger Paint';
 }
 
@@ -26,6 +26,6 @@ img {
 }
 
 .carouselimg {
-  width: 500px;
-  text-align: center;
+  width: 400px;
+  margin:auto;
 }
