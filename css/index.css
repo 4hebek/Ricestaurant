@@ -3,6 +3,8 @@
 .logo{
   width: 100%;
   height: auto;
+  display: inline;
+  vertical-align: middle;
 }
 
 
@@ -16,8 +18,11 @@ h1.title {
   font-family: 'Finger Paint';
 }
 
-.center1{
+p.address {
   text-align: center;
+  padding-top: 0px;
+  font-size: 20px;
+  background: rgba(204, 204, 204, 0.8)
 }
 
 img {
