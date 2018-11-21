@@ -1,8 +1,21 @@
-// index CSS //
 
-img.logo {
-  height: 10px;
-  width: 10px;
-  padding: 10px 10px 10px 10px;
 
+.logo{
+  width: 100%;
+  height: auto;
+}
+
+
+h1.title {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom: 0px;
+  font-size: 100px;
+  font-family: 'Finger Paint';
+}
+
+.center1{
+  text-align: center;
 }
