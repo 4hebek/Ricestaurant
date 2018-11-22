@@ -21,6 +21,7 @@ h1.title {
 
 h2 {
   font-family: 'Finger Paint';
+  text-align: center;
 }
 
 p.address {
@@ -33,6 +34,10 @@ p.address {
 img {
   width: 250px;
   height: 250px;
+}
+
+.img-rounded {
+  margin: 5px;
 }
 
 .carouselimg {

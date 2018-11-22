@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-xs-2"></div>
       <div class="col-xs-2">
-        <img src="logo.png" alt="Ricestaurant logo" class="logo">
+        <img src="logo.png" alt="Ricestaurant logo" class="logo img-responsive">
       </div>
       <div class="col-xs-6">
         <h1 class="title"> Ricestaurant </h1>
@@ -30,7 +30,7 @@
         <nav class="navbar navbar-inverse navbar-center text-center">
           <div class="container-fluid">
               <button id="AboutUs" type="submit" class="btn btn-info navbar-btn">About Us</button>
-              <a button id="ContactUs" type="submit" class="btn btn-danger navbar-btn" href="/menu.html">Contact Us</button></a>
+              <button id="ContactUs" type="submit" class="btn btn-danger navbar-btn">Contact Us</button>
               <button id="Booktable" type="submit" class="btn btn-primary navbar-btn">Book a table</button>
               <button id="Menu" type="submit" class="btn btn-warning navbar-btn">Menu</button>
           </div>
@@ -39,6 +39,21 @@
       <div class="col-xs-2"></div>
     </div>
   </div>
+  <script>
+    $('#ContactUs').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/contact.html");
+});
+
+    $('#Booktable').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/contact.html");
+});
+
+    $('#Menu').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/menu.html");
+});
+</script>
+
+
 </header>
 
 <body>
@@ -92,7 +107,7 @@
 
           <div class='row'>
             <div class='col-xs-4'>
-              <img src='rice2.jpg'>
+              <img src='rice2.jpg' class='img-rounded'>
               <blockquote>
                 <p>My favourite was the Rice Cream. It was like ice cream but ricey!</p>
                 <small>Rice Witherspoon</small>
@@ -100,7 +115,7 @@
             </div>
 
             <div class='col-xs-4'>
-              <img src='rice3.jpg'>
+              <img src='rice3.jpg' class='img-rounded'>
               <blockquote>
                 <p>It's my go-to rice restaurant. It must be something in the rice!</p>
                 <small>Rice Withouterspoon</small>
@@ -108,7 +123,7 @@
             </div>
 
             <div class='col-xs-4'>
-              <img src='rice-background.jpg'>
+              <img src='rice-background.jpg' class='img-rounded'>
               <blockquote>
                 <p>I just LOVE rice!!!</p>
                 <small>Kaz, age 5</small>
