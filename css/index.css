@@ -34,3 +34,7 @@ img {
   width: 400px;
   margin:auto;
 }
+
+.container-fluid{
+  text-align: center;
+}
