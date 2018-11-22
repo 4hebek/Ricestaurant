@@ -16,12 +16,17 @@ h1.title {
   padding-bottom: 0px;
   font-size: 80px;
   font-family: 'Finger Paint';
+  color: black;
+}
+
+h2 {
+  font-family: 'Finger Paint';
 }
 
 p.address {
   text-align: center;
   padding-top: 0px;
-  font-size: 20px;
+  font-size: 10px;
   background: rgba(204, 204, 204, 0.8)
 }
 
