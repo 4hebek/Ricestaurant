@@ -10357,10 +10357,6 @@ if ( !noGlobal ) {
 	window.jQuery = window.$ = jQuery;
 }
 
-$('#ContactUs').click(function(){
-window.open("../contact.html");
-});
-
 
 return jQuery;
 } );
