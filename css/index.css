@@ -38,3 +38,7 @@ img {
 .container-fluid{
   text-align: center;
 }
+
+button{
+  margin: 25px;
+}
