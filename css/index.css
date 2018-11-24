@@ -47,8 +47,18 @@ img {
 
 .container-fluid{
   text-align: center;
+  background-color: rgba(204, 204, 204, 0.8)
 }
 
 button{
   margin: 25px;
+}
+
+#AboutUs, #ContactUs, #Booktable, #Menu {
+  background-color: #F2AA7E
+}
+
+.btn {
+  border: 0px solid transparent;
+  padding: 10px, 15px
 }
