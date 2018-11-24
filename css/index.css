@@ -55,10 +55,10 @@ button{
 }
 
 #AboutUs, #ContactUs, #Booktable, #Menu {
-  background-color: #F2AA7E
+  background-color: #F2AA7E;
 }
 
 .btn {
   border: 0px solid transparent;
-  padding: 10px, 15px
+  padding: 10px, 15px;
 }
