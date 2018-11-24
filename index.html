@@ -1,1 +1,166 @@
+<!DOCTYPE html>
 <html>
+<head>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.js"> </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+
+<link href='css/bootstrap.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Finger Paint" rel='stylesheet'>
+</head>
+<header>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-2">
+        <img src="logo.png" alt="Ricestaurant logo" class="logo img-responsive">
+      </div>
+      <div class="col-xs-6">
+        <h1 class="title"> Ricestaurant </h1>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+</div>
+    <div class="row">
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8">
+        <nav class="navbar navbar-inverse navbar-center text-center">
+          <div class="container-fluid">
+              <button id="AboutUs" type="submit" class="btn btn-info navbar-btn">About Us</button>
+              <button id="ContactUs" type="submit" class="btn btn-danger navbar-btn">Contact Us</button>
+              <button id="Booktable" type="submit" class="btn btn-primary navbar-btn">Book a table</button>
+              <button id="Menu" type="submit" class="btn btn-warning navbar-btn">Menu</button>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+  </div>
+  <script>
+    $('#ContactUs').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/contact.html");
+});
+
+    $('#Booktable').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/contact.html");
+});
+
+    $('#Menu').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/menu.html");
+});
+
+$('#AboutUs').click(function(){
+  window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/index.html");
+});
+</script>
+
+
+</header>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-2"></div>
+
+    <div class="col-xs-8">
+      <h2>Some rice pictures</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="carouselimg" src="rice3.jpg" alt="rice!">
+          </div>
+
+          <div class="item">
+            <img class="carouselimg" src="rice2.jpg" alt="rice">
+          </div>
+
+          <div class="item">
+            <img class="carouselimg" src="rice-background.jpg" alt="More rice">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+      <h2>About the Ricestaurant</h2>
+      <p> Ricestaurant was founded in 2018 by three rice innovators. The concept of the restaurant is simple! Rice is the most underrated carb but exists in more cuisines across the world than any other!*
+      Our mission is to bring people together over a bowl of the good stuff. From risotto to paella, biryanis to rice crackers and everything inbetween - you saw it here first.</p>
+      <small>*this is completely unproven but we don't really care</small>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+      <div id="buzz" class='text-center'>
+          <h2><br />What are people saying?</h2>
+
+          <div class='row'>
+            <div class='col-xs-4'>
+              <img src='rice2.jpg' class='img-rounded'>
+              <blockquote>
+                <p>My favourite was the Rice Cream. It was like ice cream but ricey!</p>
+                <small>Rice Witherspoon</small>
+              </blockquote>
+            </div>
+
+            <div class='col-xs-4'>
+              <img src='rice3.jpg' class='img-rounded'>
+              <blockquote>
+                <p>It's my go-to rice restaurant. It must be something in the rice!</p>
+                <small>Rice Withouterspoon</small>
+              </blockquote>
+            </div>
+
+            <div class='col-xs-4'>
+              <img src='rice-background.jpg' class='img-rounded'>
+              <blockquote>
+                <p>I just LOVE rice!!!</p>
+                <small>Kaz, age 5</small>
+              </blockquote>
+            </div>
+          </div>
+      </div>
+    <div class="col-xs-2"></div>
+  </div>
+</div>
+
+
+
+  <div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+    <p class="address">234 Quayside<br> Newcastle Upon Tyne<br> NE8 2DB<p>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+</div>
+</body>
+</html>

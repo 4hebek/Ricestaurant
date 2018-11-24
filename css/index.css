@@ -1,1 +1,54 @@
-// index CSS //
+
+
+.logo{
+  width: 100%;
+  height: auto;
+  display: inline;
+  vertical-align: middle;
+}
+
+
+h1.title {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom: 0px;
+  font-size: 80px;
+  font-family: 'Finger Paint';
+  color: black;
+}
+
+h2 {
+  font-family: 'Finger Paint';
+  text-align: center;
+}
+
+p.address {
+  text-align: center;
+  padding-top: 0px;
+  font-size: 15px;
+  background: rgba(204, 204, 204, 0.8)
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.img-rounded {
+  margin: 5px;
+}
+
+.carouselimg {
+  width: 400px;
+  margin:auto;
+}
+
+.container-fluid{
+  text-align: center;
+}
+
+button{
+  margin: 25px;
+}

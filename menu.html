@@ -1,1 +1,109 @@
+<<<<<<< HEAD
 
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.js"> </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+
+<link href='css/bootstrap.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Finger Paint" rel='stylesheet'>
+</head>
+<header>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-2">
+        <img src="logo.png" alt="Ricestaurant logo" class="logo img-responsive">
+      </div>
+      <div class="col-xs-6">
+        <h1 class="title"> Ricestaurant </h1>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+</div>
+    <div class="row">
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8">
+        <nav class="navbar navbar-inverse navbar-center text-center">
+          <div class="container-fluid">
+              <button id="AboutUs" type="submit" class="btn btn-info navbar-btn">About Us</button>
+              <button id="ContactUs" type="submit" class="btn btn-danger navbar-btn">Contact Us</button>
+              <button id="Booktable" type="submit" class="btn btn-primary navbar-btn">Book a table</button>
+              <button id="Menu" type="submit" class="btn btn-warning navbar-btn">Menu</button>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+  </div>
+  <script>
+  $(document).ready(function(){
+$('#ContactUs').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/contact.html");
+});
+
+$('#Booktable').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/contact.html");
+});
+
+$('#Menu').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/menu.html");
+});
+
+$('#AboutUs').click(function(){
+      window.open("/Users/blytheday/Documents/GitHub/Ricestaurant/index.html");
+});
+
+$("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+});
+
+});
+</script>
+
+<style>
+#panel, #flip {
+    padding: 5px;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 30px;
+    display: none;
+}
+</style>
+</header>
+
+<body>
+This is the Menu page
+
+
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+    <div id="flip">
+      <h2>Our Desserts</h2>
+    </div>
+    <div id="panel">
+      <ul>
+        <li> Rice cream</li>
+        <li> Riced coffee</li>
+        <li> Rice cream sundae</li>
+        <li> Rice cream sandwich</li>
+        <li> Deep fried rice cream </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="col-xs-2"></div>
+</div>
+
+</body>
+</html>
+>>>>>>> 4be978deeec04fc131438e0c2c5caab992f7259b
