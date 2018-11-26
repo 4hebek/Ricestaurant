@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Our Menu</title>
+  <title>Ricestaurant</title>
   <meta charset="utf-8">
   <meta name="description" content="Ricestaurant was established in 1995 as a traditional Asian diner. Come and try our best food and drink in Newcastle.">
   <meta name="author" content="Blythe Day, Ossai Ngozi, Karolina Habrajska">
@@ -12,9 +12,10 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"> </script>
 
-<link href='css/bootstrap.css' rel='stylesheet'>
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<link href="https://fonts.googleapis.com/css?family=Finger Paint" rel='stylesheet'>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Finger Paint" rel='stylesheet'>
+
 </head>
 <header>
 <div class="container">
@@ -31,9 +32,8 @@
 </div>
     <div class="row">
     <div class="container">
-      <div class="col-xs-2"></div>
-      <div class="col-xs-8">
-        <nav class="navbar navbar-inverse navbar-center text-center">
+      <div class="col-xs-12">
+        <nav class="navbar navbar-center text-center">
           <div class="container-fluid">
               <button id="AboutUs" type="submit" class="btn btn-info navbar-btn">About Us</button>
               <button id="ContactUs" type="submit" class="btn btn-danger navbar-btn">Contact Us</button>
@@ -42,31 +42,20 @@
           </div>
         </nav>
       </div>
-      <div class="col-xs-2"></div>
     </div>
   </div>
   <script>
-  $(document).ready(function(){
-$('#ContactUs').click(function(){
+    $('#ContactUs').click(function(){
       window.open("https://4hebek.github.io/Ricestaurant/contact.html","_self");
 });
-
-$('#Booktable').click(function(){
+    $('#Booktable').click(function(){
       window.open("https://4hebek.github.io/Ricestaurant/book.html","_self");
 });
-
-$('#Menu').click(function(){
+    $('#Menu').click(function(){
       window.open("https://4hebek.github.io/Ricestaurant/menu.html","_self");
 });
-
 $('#AboutUs').click(function(){
-      window.open("https://4hebek.github.io/Ricestaurant/index.html","_self");
-});
-
-$("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-});
-
+  window.open("https://4hebek.github.io/Ricestaurant/index.html","_self");
 });
 </script>
 
@@ -127,6 +116,12 @@ $("#flip").click(function(){
   </div>
 </div>
 <div class="col-xs-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+  <p class="address">234 Quayside<br> Newcastle Upon Tyne<br> NE8 2DB<p>
+  </div>
 </div>
 
 </body>
