@@ -13,27 +13,44 @@ h1.title {
   vertical-align: middle;
   padding-left:10px;
   padding-right:10px;
+  padding-top: 20px;
   padding-bottom: 0px;
-  font-size: 80px;
+  font-size: 75px;
   font-family: 'Finger Paint';
-  color: black;
+  color: #AF4213;
 }
 
 h2 {
+  padding-top: 0;
   font-family: 'Finger Paint';
   text-align: center;
+  color: #AF4213;
+}
+
+small{
+  padding-bottom: 20px;
 }
 
 p.address {
   text-align: center;
   padding-top: 0px;
   font-size: 15px;
-  background: rgba(204, 204, 204, 0.8)
+  background: #F4F1DE;
+  font-family: 'Finger Paint';
+  color: #AF4213;
+  font-weight:600;
 }
 
 img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
+  align-content: center;
+}
+
+blockquote{
+  text-align: left;
+  font-size: 15px;
+  font-family: arial;
 }
 
 .img-rounded {
@@ -42,26 +59,36 @@ img {
 
 .carouselimg {
   width: 400px;
-  margin:auto;
+  margin: auto;
 }
 
-.container-fluid{
-  text-align: center;
-  background-color: rgba(204, 204, 204, 0.8)
+#myCarousel{
+  width: 400px;
+  margin: auto;
 }
+
 
 button{
-  margin: 25px;
-  float: left
+  align-content: stretch;
 }
 
 #AboutUs, #ContactUs, #Booktable, #Menu {
-  background-color: #F2AA7E;
+  background-color: #AF4213;
+  font-weight: 600;
+  margin: 15px;
+  border: 0px solid transparent;
+  padding: 10px, 10px;
+  width: 150px
+  font-family: 'Finger Paint';
 }
 
-.btn {
+.row{
+padding-top: 20px;}
+
+.container-fluid{
+  text-align: center;
+  background-color: #F4F1DE;
   border: 0px solid transparent;
-  margin: 5px, 10px
-  padding: 10px, 10px;
-  width: 120px
+  padding: 30px,10px, 10px, 10px;
+  font-family: arial;
 }
