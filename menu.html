@@ -76,61 +76,65 @@ $('#AboutUs').click(function(){
   <div class="row">
     <div class="col-xs-2"></div>
     <div class="col-xs-8">
-      <h2>OUR SPECIALTITIES</h2>
-      <p>Discover the restaurant's specialities and our head chef's talent in a range of dishes...</p>
-    </div>
-    <div class="col-xs-2"></div>
-    </div>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-<div class="row">
-  <div class="col-xs-2"></div>
-  <div class="col-xs-8">
-    <div id="flip">
-      <h2>STARTERS</h2>
-    </div>
-    <div id="panel">
-      <ul>
+<div class="container">
+  <h2>OUR SPECIALITIES</h2>
+  <p><strong>Discover</strong> the restaurant's  <strong>specialities</strong> and our head chef's talent in a range of dishes...</p>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">STARTERS</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">  <ul>
         <li> Rice cream and Spinach soup</li>
         <li> Riced Toastie</li>
         <li> Rice soup</li>
         <li> Rice cream sandwich</li>
         <li> Deep fried rice cream </li>
-      </ul>
+      </ul></div>
+      </div>
     </div>
-  </div>
-  <div class="col-xs-2"></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-2"></div>
-  <div class="col-xs-8">
-    <div id="flip">
-      <h2>MAINS</h2>
-    </div>
-  <div id="panel">
-    <ul>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">MAINS</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"><ul>
       <li> Risotto Funghi </li>
       <li> King Prawn Risotto </li>
       <li> Lamb biryani </li>
-    </ul>
-  </div>
-</div>
-<div class="col-xs-2"></div>
-</div>
-<div class="row">
-  <div class="col-xs-2"></div>
-  <div class="col-xs-8">
-    <div id="flip">
-      <h2>DESSERTS</h2>
+    </ul></div>
+      </div>
     </div>
-    <div id="panel">
-      <ul>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">DESSERTS</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"><ul>
         <li> Rice Cake</li>
         <li> Caramel Riced cake</li>
         <li> Rice cream sundae</li>
         <li> Rice cream sandwich</li>
         <li> Deep fried rice cream </li>
-      </ul>
+      </ul></div>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   </div>
   <div class="col-xs-2"></div>
