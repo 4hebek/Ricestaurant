@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Ricestaurant</title>
+
   <meta charset="utf-8">
   <meta name="description" content="Ricestaurant was established in 1995 as a traditional Asian diner. Come and try our best food and drink in Newcastle.">
   <meta name="author" content="Blythe Day, Ossai Ngozi, Karolina Habrajska">
@@ -11,15 +12,68 @@
   <script type="text/javascript" src="js/jquery-3.3.1.js"> </script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+  <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
 
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Finger Paint" rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css">
 
+  <script>
+  $('#ContactUs').click(function(){
+      window.open("https://4hebek.github.io/Ricestaurant/contact.html","_self");
+  });
+
+  $('#Booktable').click(function(){
+      window.open("https://4hebek.github.io/Ricestaurant/book.html","_self");
+  });
+
+  $('#Menu').click(function(){
+      window.open("https://4hebek.github.io/Ricestaurant/menu.html","_self");
+  });
+
+  $('#AboutUs').click(function(){
+  window.open("https://4hebek.github.io/Ricestaurant/index.html","_self");
+  });
+  </script>
+
+  <script type="text/javascript">
+    function validateForm() {
+    if (isEmpty(document.getElementById('data_3').value.trim())) {
+        alert('Name is required!');
+    return false;
+  }
+
+    if (!validateEmail(document.getElementById('data_5').value.trim())) {
+     alert('Email must be a valid email address!');
+    return false;
+  }
+
+    if (isEmpty(document.getElementById('data_6').value.trim())) {
+  alert('Date is required!');
+  return false;
+  }
+
+    if (isEmpty(document.getElementById('data_7').value.trim())) {
+  alert('Time is required!');
+  return false;
+  }
+  return true;
+  }
+  
+  function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+  function validateEmail(email) {
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+  return isEmpty(email) || re.test(email);
+  }
+  </script>
 </head>
+
 <header>
-<div class="container">
+
+  <div class="container">
     <div class="row">
       <div class="col-xs-2"></div>
       <div class="col-xs-2">
@@ -30,8 +84,9 @@
       </div>
       <div class="col-xs-2"></div>
     </div>
-</div>
-    <div class="row">
+  </div>
+
+  <div class="row">
     <div class="container">
       <div class="col-xs-12">
         <nav class="navbar navbar-center text-center">
@@ -45,110 +100,64 @@
       </div>
     </div>
   </div>
-  <script>
-    $('#ContactUs').click(function(){
-      window.open("https://4hebek.github.io/Ricestaurant/contact.html","_self");
-});
-    $('#Booktable').click(function(){
-      window.open("https://4hebek.github.io/Ricestaurant/book.html","_self");
-});
-    $('#Menu').click(function(){
-      window.open("https://4hebek.github.io/Ricestaurant/menu.html","_self");
-});
-$('#AboutUs').click(function(){
-  window.open("https://4hebek.github.io/Ricestaurant/index.html","_self");
-});
-</script>
-
 
 </header>
+
 <body>
   <div class="container">
     <div class="row">
       <div class="col-xs-2"></div>
       <div class="col-xs-8">
         <h2> Table Reservation </h2>
-        <p>We would be glad to reserve a table for you at our restaurant!</p>
+          <p>We would be glad to reserve a table for you at our restaurant!</p>
 
-<form method="post" action="//submit.form" onSubmit="return validateForm();">
-  <div style="width: 400px;">
+          <form method="post" action="//submit.form" onSubmit="return validateForm();">
+            <div style="width: 400px;"></div>
+            <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
+              <input type="text" id="data_3" name="data_3" style="width : 400px;" class="form-control"/>
+            </div>
+
+            <div style="padding-bottom: 18px;">Phone<br/>
+              <input type="text" id="data_4" name="data_4" style="width : 400px;" class="form-control"/>
+            </div>
+
+            <div style="padding-bottom: 18px;">Email<br/>
+              <input type="text" id="data_5" name="data_5" style="width : 400px;" class="form-control"/>
+            </div>
+
+            <div style="padding-bottom: 18px;">Date<span style="color: red;"> *</span><br/>
+              <input type="text" id="data_6" name="data_6" style="width : 250px;" class="form-control"/>
+            </div>
+
+            <div style="padding-bottom: 18px;">Time<span style="color: red;"> *</span><br/>
+              <input type="text" id="data_7" name="data_7" style="width : 250px;" class="form-control"/>
+            </div>
+
+            <div style="padding-bottom: 18px;">Number of Guests<span style="color: red;"> *</span><br/>
+              <select id="data_8" name="data_8" style="width : 250px;" class="form-control"><option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>10+ (Specify in Comments)</option>
+              </select>
+            </div>
+
+            <div style="padding-bottom: 18px;">Comments / Additional Requests<br/>
+              <textarea id="data_9" false name="data_9" style="width : 400px;" rows="6" class="form-control"></textarea>
+            </div>
+
+            <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+
+          </form>
+
 </div>
-    <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
-      <input type="text" id="data_3" name="data_3" style="width : 400px;" class="form-control"/>
-  </div>
 
-  <div style="padding-bottom: 18px;">Phone<br/>
-    <input type="text" id="data_4" name="data_4" style="width : 400px;" class="form-control"/>
-  </div>
-
-  <div style="padding-bottom: 18px;">Email<br/>
-    <input type="text" id="data_5" name="data_5" style="width : 400px;" class="form-control"/>
-  </div>
-
-  <div style="padding-bottom: 18px;">Date<span style="color: red;"> *</span><br/>
-    <input type="text" id="data_6" name="data_6" style="width : 250px;" class="form-control"/>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
-
-  <div style="padding-bottom: 18px;">Time<span style="color: red;"> *</span><br/>
-    <input type="text" id="data_7" name="data_7" style="width : 250px;" class="form-control"/>
-  </div>
-
-  <div style="padding-bottom: 18px;">Number of Guests<span style="color: red;"> *</span><br/>
-      <select id="data_8" name="data_8" style="width : 250px;" class="form-control"><option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>10+ (Specify in Comments)</option>
-      </select>
-    </div>
-
-    <div style="padding-bottom: 18px;">Comments / Additional Requests<br/>
-      <textarea id="data_9" false name="data_9" style="width : 400px;" rows="6" class="form-control"></textarea>
-    </div>
-        <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
-    <div>
-      <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
-        <script src="https://www.100forms.com/js/FORMKEY:J9KWZ99FWX3X/SEND:my@email.com" type="text/javascript"></script>
-    </div>
-</form>
-
-<script type="text/javascript">
-  function validateForm() {
-  if (isEmpty(document.getElementById('data_3').value.trim())) {
-      alert('Name is required!');
-  return false;
-}
-  if (!validateEmail(document.getElementById('data_5').value.trim())) {
-   alert('Email must be a valid email address!');
-  return false;
-}
-if (isEmpty(document.getElementById('data_6').value.trim())) {
-alert('Date is required!');
-return false;
-}
-if (isEmpty(document.getElementById('data_7').value.trim())) {
-alert('Time is required!');
-return false;
-}
-return true;
-}
-function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-function validateEmail(email) {
-var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-return isEmpty(email) || re.test(email);
-}
-</script>
-</div>
 <div class="col-xs-2"></div>
 </div>
 </div>
