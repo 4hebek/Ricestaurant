@@ -1,5 +1,4 @@
 
-
 .logo{
   width: 100%;
   height: auto;
@@ -7,6 +6,9 @@
   vertical-align: middle;
 }
 
+header{
+  background-color: #F4F1DE;
+}
 
 h1.title {
   display: inline-block;
@@ -15,7 +17,7 @@ h1.title {
   padding-right:10px;
   padding-top: 20px;
   padding-bottom: 0px;
-  font-size: 75px;
+  font-size: 100px;
   font-family: 'Finger Paint';
   color: #AF4213;
 }
