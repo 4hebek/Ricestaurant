@@ -68,23 +68,50 @@
       <div class="col-xs-2"></div>
       <div class="col-xs-8">
         <h2>Contact Us</h2>
-          <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-              Name:<br><input type="text" name="name"><br>
-              E-mail:<br><input type="text" name="mail"><br>
-              Your Enquiry:<br><input type="text" name="comment" size="50"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-          </form>
-            <script>
-            $(document).ready(function(){
-                $("#hide").click(function(){
-                    $("p").hide();
-                });
-                $("#show").click(function(){
-                    $("p").show();
-                });
-            });
-            </script>
+        <p>Send us a message using this form and we'll get back to you as soon as we can!</p>
+        <form method="post" action="//submit.form" onSubmit="return validateForm();">
+          <div style="width: 400px;"></div>
+          <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
+            <input type="text" id="data_3" name="data_3" style="width : 400px;" class="form-control"/>
+          </div>
+
+          <div style="padding-bottom: 18px;">Phone<br/>
+            <input type="text" id="data_4" name="data_4" style="width : 400px;" class="form-control"/>
+          </div>
+
+          <div style="padding-bottom: 18px;">Email<br/>
+            <input type="text" id="data_5" name="data_5" style="width : 400px;" class="form-control"/>
+          </div>
+
+          <div style="padding-bottom: 18px;">Your message<br/>
+            <textarea id="data_9" false name="data_9" style="width : 400px;" rows="6" class="form-control"></textarea>
+          </div>
+
+          <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+
+        </form>
+        <script type="text/javascript">
+          function validateForm() {
+          if (isEmpty(document.getElementById('data_3').value.trim())) {
+              alert('Name is required!');
+          return false;
+        }
+
+          if (!validateEmail(document.getElementById('data_5').value.trim())) {
+           alert('Email must be a valid email address!');
+          return false;
+        }
+
+          return true;
+        }
+
+        function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+
+        function validateEmail(email) {
+          var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+          return isEmpty(email) || re.test(email);
+        }
+        </script>
       </div>
       <div class="col-xs-2"></div>
     </div>
