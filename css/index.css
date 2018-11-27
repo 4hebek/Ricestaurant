@@ -83,7 +83,8 @@ button{
 }
 
 .row{
-padding-top: 20px;}
+padding-top: 20px;
+}
 
 .container-fluid{
   text-align: center;
@@ -126,4 +127,51 @@ padding-top: 20px;}
     .col-xs-10 {width: 83.33%;}
     .col-xs-11 {width: 91.66%;}
     .col-xs-12 {width: 100%;}
+}
+
+.socialgroup {
+  margin: auto;
+  text-align: center;
+}
+
+#footer {
+  background: #F4F1DE;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: auto;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
