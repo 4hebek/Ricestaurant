@@ -29,7 +29,7 @@ h2 {
   color: #AF4213;
 }
 
-h4 {
+h4.panel-title{
   padding-top: 0;
   font-family: 'Finger Paint';
   text-align: center;
