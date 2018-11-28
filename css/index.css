@@ -29,6 +29,13 @@ h2 {
   color: #AF4213;
 }
 
+h4 {
+  padding-top: 0;
+  font-family: 'Finger Paint';
+  text-align: center;
+  color: #AF4213;
+}
+
 small{
   padding-bottom: 20px;
 }
